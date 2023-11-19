@@ -1,0 +1,64 @@
+body{
+    background-color: grey;
+}
+#todo{
+    background-color:lightsalmon;
+border:2px pink double;
+    max-width:400px;
+    height:300px;
+    margin:50px auto;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 50px salmon(201, 72, 115);
+
+}
+#taskInput{
+    padding:10px;
+    border:1px solid #add;
+    border-radius:4px;
+    width:22rem;
+}
+
+
+#btnDiv{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#addTask{
+    width:28%;
+    margin-left:0px;
+    margin:10px auto;
+    padding:10px;
+    background-color: #a0bbd8;
+    cursor:pointer;
+    background-color:lightseagreen;
+}
+
+#taskList li{
+    list-style-type:none;
+    margin:10px 0;
+    padding:10px;
+    background-color:lightslategray;
+    border-radius:4px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    
+}
+#taskList li button{
+    padding:5px 10px;
+    background-color: rgb(240, 128, 128);
+    color: #fff;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+#taskList li.completed{
+    background-color: #add;
+    text-decoration: line-through;
+}
+     
+
