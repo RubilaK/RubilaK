@@ -1,26 +1,19 @@
-   /* numArray=[1,2,3,4,5];
-primeNumber = (numArray) => {
-               numArray = numArray.filter((number) => {
-                 for (var i = 2; i <= Math.sqrt(number); i++) {
-                   if (number % i === 0) return false;
-                 }
-                 return true;
-               });
-               console.log(numArray);
-           }
+const numArray = [1, 2, 3, 4, 5];
 
-           //numArray = [1, 2, 3, 4, 5];*/
+const primeNumber = (numArray) => {
+    const primes = numArray.filter((number) => {
+        if (number < 2) return false; // 0 and 1 are not prime numbers
 
-           numArray = [1, 2, 3, 4, 5];
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+    });
 
-primeNumber = (numArray) => {
-  numArray= numArray.filter((number) => {
-    for (var i = 2; i <= Math.sqrt(number); i++) {
-      if (number % i === 0) return false;
-    }
-    return true;
-  });
-  console.log(numArray);
-}
+    console.log(primes);
+};
+
+primeNumber(numArray);
+
 
 

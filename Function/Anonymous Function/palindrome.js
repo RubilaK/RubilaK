@@ -1,41 +1,34 @@
-function isPalindrome(N)
-    {
-        let str = "" + N;
-        let len = str.length;
-        for (let i = 0; i < parseInt(len / 2, 10); i++)
-        {
-            if (str[i] != str[len - 1 - i ])
-                return false;
-        }
-        return true;
-    }
     
   //Anonymous Function
-  function A(arr, n)
-    {
-        // Traversing each element of the array
-        // and check if it is palindrome or not
-        for (let i = 0; i < n; i++)
-        {
-            let ans = isPalindrome(arr[i]);
-            if (ans == false)
-                return false;
+  function A(arr, n) {
+    for (let i = 0; i < n; i++) {
+        let ans = isPalindrome(arr[i]);
+        if (ans === false) {
+            return false;
         }
-        return true;
     }
-    
-   // IIFE 
+    return true;
+}
 
-              (  function (arr, n)
-        {
-            // Traversing each element of the array
-            // and check if it is palindrome or not
-            for (let i = 0; i < n; i++)
-            {
-                let ans = isPalindrome(arr[i]);
-                if (ans == false)
-                    return false;
-            }
-            return true;
-        })([1,2,3] , 3)
+function isPalindrome(str) {
+}
 
+let array = ["level", "radar", "hello", "civic"];
+let result = A(array, array.length);
+console.log(result);   
+
+//IIFE Function
+(function(arr, n) {
+    for (let i = 0; i < n; i++) {
+        let ans = isPalindrome(arr[i]);
+        if (ans === false) {
+            console.log("Not all elements are palindromes.");
+            return false;
+        }
+    }
+    console.log("All elements are palindromes.");
+    return true;
+})([1, 2, 3], 3);
+
+function isPalindrome(str) {
+}

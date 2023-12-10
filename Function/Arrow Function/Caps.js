@@ -1,4 +1,4 @@
-/*const str='hello rubila';
+const str='hello rubila';
 titleCase = (str) => {
     str = str.toUpperCase().split(' ');
     for (var i = 0; i < str.length; i++) {
@@ -7,18 +7,6 @@ titleCase = (str) => {
     return str.join(' ');
 
   } 
-  console.log(titleCase(str));*/
-
-const Name="rubila krishnan" ;
- Myname =(Name)=>{
-  Name=Name.toUppercase();
-
-  for(i=0; i<Name.length; i++){
-    Myname=Name[i].toUppercase();
-
-  }
-  return Name;
-}
-console.log(Myname(Name))
+  console.log(titleCase(str));
 
   

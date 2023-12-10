@@ -1,14 +1,12 @@
-//Anonymous Function 
-let arr=[1,1,2,3,4,2];
+//Anonymous Function
+let arr = [1, 1, 2, 3, 4, 2];
 
-function num(array){
-    let dup = [...new Set(arr)];
-    console.log(dup);
+(function(arr) {
+  let dup = [...new Set(arr)];
+  console.log(dup);
+})(arr);
 
-  }
 
-
-  num();
 //IIFE 
            (function(array){
     let dup = [...new Set(array)];
