@@ -1,0 +1,159 @@
+.wholeDiv {
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+.firstDiv,
+.secondDiv,
+.thirdDiv {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #1F1627;
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 7%;
+}
+
+.firstDiv::after,
+.secondDiv::after,
+.thirdDiv::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-4deg);
+}
+
+.secondDiv::before,
+.thirdDiv::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #EAE1D8;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transform: skewY(-4deg);
+}
+
+.secondDiv {
+    background-color: #EAE1D8;
+    color: #000;
+}
+
+.thirdDiv::before {
+    background: #1F1627;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.borderRadius {
+    border-radius: 50px 50px 0 0;
+}
+
+.fieldSet {
+    height: 5165px;
+    position: absolute;
+    border: 2px dotted#fff;
+    width: 85%;
+    z-index: 2;
+    left: 7%;
+    right: 0;
+    top: 14%;
+    border-radius: 50px;
+    border-bottom: none;
+}
+
+.ifactoryStyle {
+    position: absolute;
+    text-align: center;
+    top: -13px;
+    left: 41%;
+    color: #ffff;
+    width: 193px;
+    background: #1F1627;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.pad15 {
+    padding-top: 7%;
+}
+
+.marBottom {
+    margin-bottom: 10px;
+    font-family: console;
+    font-size: 30px;
+    padding: 15px;
+    padding-left: 25px;
+}
+
+.weightClass {
+    font-size: 120px;
+}
+
+.centerAlign {
+    text-align: left;
+    padding: 35px 200px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    padding-left: 300px;
+}
+
+.consoleClass {
+    font-family: console;
+    letter-spacing: 3px;
+}
+
+div.normalStyle {
+    padding: 0 2px 2px 85px;
+    font-weight: lighter;
+    font-family: serif;
+}
+
+div.normalStyleOdd {
+    padding: 0 2px 2px 205px;
+    font-weight: lighter;
+    font-family: serif;
+}
+
+.padOdd {
+    padding: 0 2px 2px 125px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.posThird {
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+.posOpp {
+    padding-left: 78px;
+    position: relative;
+    top: -48px;
+}
+
+.normalStyle {
+    padding-left: 195px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
